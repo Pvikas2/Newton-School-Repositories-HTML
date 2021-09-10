@@ -5,6 +5,10 @@
     --pink-color: #F87652;
     --secondary-color:#bbbbbb;
     --bg-color-of-lists-in-skills-section: #818180;
+    --card-bg-color : #232432;
+    --bg-color-for-form-input: #ffffff24;
+    --border-color-for-form-inputs: #c4c4c44a;
+
 }
 
 
@@ -360,47 +364,230 @@ canvas.particles-js-canvas-el{
 
 
 
-/* Portfolio tabs */
-/* .tabs_center{
+ /* Portfolio tabs Section */
+/*.tabs_center{
    display: flex;
    flex-direction: row;
    align-items: center;
 
 } */
-.portfolio_section{
-    background: #282A39;
-    padding: 170px 0px;
+.portfolio-section{
+    /* background: #282A39; */
+    padding-top: 170px;
+    /* margin-top: 170px;
+    width: 100%;
+    height: auto; */
 }
 
-.portfolio_section .nav-tabs{
+.portfolio-section .nav-tabs{
     border: none;
     width: 30%;
     text-align: center;
 }
-.portfolio_section .nav-tabs .nav-link.active{
+.portfolio-section .nav-tabs .nav-link.active{
     border: none;
     color:white;
     border-bottom: 2px solid var(--pink-color) !important;
     background: transparent;
 }
 
-.portfolio_section .nav-tabs .nav-link.active:hover{
+.portfolio-section .nav-tabs .nav-link.active:hover{
     border-bottom: 2px solid var(--pink-color) !important;
 
 }
-.portfolio_section .nav-tabs .nav-item.show .nav-link{
+.portfolio-section .nav-tabs .nav-item.show .nav-link{
     font-weight: 400;
     font-size: 14px;
     background: transparent !important;
 }
 
-.portfolio_section .nav-tabs .nav-link:hover{
+.portfolio-section .nav-tabs .nav-link:hover{
     border: none;
 }
 
-.portfolio_section .tab-content .card img{
+.portfolio-section .tab-content .card img{
     border: 2px solid white;
 }
+
+
+
+
+ 
+/* Blogs section */
+.blogs_section{
+ /* background-color: #282A39; */
+ padding-bottom: 170px;
+ padding-top: 70px;
+}
+
+.blogs_section .card{
+    background : var(--card-bg-color) ;
+}
+
+.blogs_section .card:hover{
+    animation:pulse;
+    animation-duration: 0.5s;
+}
+
+.blogs_section .card-body .title{
+    font-size: 22px;
+    font-weight: 500;
+}
+.blogs_section .card-body .date
+{
+    font-size: 11px;
+}
+.blogs_section .card-body .date span{
+    color: var(--pink-color);
+}
+.blogs_section .card-body .txt{
+    font-size: 12px;
+    color: var(--secondary-color);
+}
+
+.blogs_section .card-body a{
+    color: var(--pink-color);
+
+}
+
+
+
+/* About me Section  */
+.contact_section{
+    /* background: #282a39;  */
+     padding-bottom: 170px;
+}
+
+
+.contact_section .heading{
+    font-size: 50px;
+    font-weight: 500px;
+}
+ 
+.contact_section hr{
+    border: 0.5px solid var(--pink-color);
+    width: 6rem;
+    margin: 12px 0px;
+}
+
+.contact_section p{
+    color: var(--secondary-color);
+    font-size: 13px;
+}
+
+.contact_section form .form-control{
+   background: var(--bg-color-for-form-input);
+   border: 2px solid var(--border-color-for-form-inputs);
+   border-radius: 0px;
+   color: white;
+}
+
+.contact_section form button{
+    background: var(--pink-color);
+    border: 2px solid var(--pink-color);
+    color: white;
+    width: 100px;
+    font-size: 15px;
+}
+.contact_section form button:hover{
+    animation : swing ;
+    animation-duration: 0.5s;
+}
+
+.contact_section ul li{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.contact_section ul li .fa{
+    color: var(--pink-color);
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .contact_section .heading{
+        font-size: 42px;
+    }
+}
+
+
+
+
+/* Footer-Area  */
+.footer-area{
+    border-top: 2px solid var(--border-color-for-form-inputs);
+    padding: 40px 0px;
+
+}
+
+.footer-area .navbar-brand {
+    font-size: 23px;
+}
+
+.footer-area p{
+    margin-top: 13px;
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+
+.footer-area .logo-area .fa{
+    color: var(--pink-color);
+    font-size: 17px !important;
+    border: 2px solid var(--pink-color);
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 5px;
+
+}
+.footer-area .logo-area .fa:hover{
+    animation: swing ;
+    animation: duration 0.5s;
+    background: white;
+}
+.footer-area .row .column .heading{
+    font-weight: 400 !important;
+    font-size: 21px;
+    color: white;
+} 
+
+.footer-area .list-group .list-group-item{
+    margin: -3px 0px;
+    color: white;
+    transition: 0.5s
+    !important;
+}
+.footer-area .list-group .list-group-item i{
+    font-size: 10px;
+    color: var(--pink-color);
+    transition: 0.5s;
+
+}
+.footer-area .list-group .list-group-item:hover i{
+    padding-right: 10px;
+}
+
+
+@media (max-width: 768px) and (min-width: 500px){
+    .footer-area .links{
+        margin-bottom: 30px;
+    }
+    .footer-area .row .column .heading{
+        font-size: 17px !important;
+
+    }
+    .portfolio-section .list-group{
+        margin-bottom: 30px;
+    }
+
+
+}
+
+
+
 
 
 

@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --background-color:#333647;
+    --pink-color: #F87652;
+    --secondary-color:#bbbbbb;
+    --bg-color-of-lists-in-skills-section: #818180;
+}
+
+
+/* for font-family which is globally :-moz-user-disabled */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+   background-color: var(--background-color) !important;
+}
+h1,h2,h3,h4,h5,h6,p,a,td,span{
+    cursor:pointer;
+}
+canvas.particles-js-canvas-el{
+    position: absolute;
+    height: 100% !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1000;
+    margin: 0px;
+}
+
+/* Navbar Style */
+
+.nav_section .navbar-brand{
+    color: white;
+    font-size: 22px;
+}
+.nav_section .navbar-brand span{
+    color: white;
+}
+.nav_section .navbar-brand span image{
+    border-color: var(--pink-color);
+}
+.nav_section .navbar-nav li{
+    margin: 0px 8px;
+}
+.nav_section .navbar-nav li a{
+    color: white !important;
+    font-size: 15px;  
+}
+.nav_section .navbar-nav .nav-link::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    bottom: 7px;
+    transition: 0.5s;
+    border-radius: 1px;
+}
+.nav_section .navbar-nav .nav-link:hover::before{
+    content: '';
+    width: 17px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 7px;
+    transition: 0.5s;
+}
+
+
+
+/* Hero Section  */
+.hero_section .row{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
+.hero_section .row h1,h2,h3,p{
+    color: white;
+}
+.hero_section .row h3{
+ font-size: 19px;
+ font-weight: 300;
+ margin-bottom: 15px;
+}
+.hero_section .row h3::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 90px;
+    height: 2px;
+    text-align: center;
+    background-color: white ;
+    margin-left: 6px;
+    border-radius: 3px;
+}
+.hero_section .row h1{
+    font-size: 65px;
+    font-weight: 800;
+}
+.hero_section .row h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 8px 0px ;
+}
+
+.hero_section .row p{
+    font-size: 13px;
+    margin-top: 13px;
+    line-height: 21px;
+    color: var(--secondary-color);
+}
+.hero_section .row button{
+    border-radius: 10px;
+    background-color: var(--pink-color);
+    font-size: 19px;
+    border: 3px solid var(--pink-color);
+    width: 113px;
+    font-family: 'Poppins'sans-serif;
+    margin-top: 10px;
+}
+.hero_section .row button:hover{
+    animation:swing;
+    animation-duration: 0.5s;
+    background-color: white;
+    color: black;
+    border: white;
+
+}
+
+.hero_section .row img{
+    width: 80%;
+    border: 2px solid black;
+}
+/* .img_edit{
+    border: 3px solid black;
+    padding: 2px;
+} */
+
+
+/* Media adjustment for responsive design for Hero Section */
+@media (max-width: 1200px) and (min-width: 993px) {
+    .hero_section .row h1{
+        font-size:  58px;
+    }
+}
+@media (max-width: 993px) and (min-width: 763px) {
+    /* .hero_section{
+        margin: 135px 0px;
+    } */
+    .hero_section .row h1{
+        font-size: 42px;
+    }
+    .hero_section .row h2{
+        font-size: 15px;
+    }
+    .hero_section .row h3{
+        font-size: 15px;
+    }
+    .hero_section .row p{
+        font-size: 11px;
+    }
+    .hero_section .row button{
+        font-size: 15px;
+    }
+}
+@media (max-width: 763px) and (min-width: 500px) {
+     .hero_section{
+         margin: 135px 0px;
+     }
+    .hero_section .row h1{
+        font-size: 46px;
+        text-align: center;
+    }
+    .hero_section .row h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .hero_section .row h3{
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .hero_section .row h3::after{
+        width: 0px;
+    }
+    .hero_section .row p{
+        font-size: 11px;
+        text-align: center;
+    }
+    .hero_section .row button{
+        font-size: 15px;
+
+    }
+    .hero_section .btn_container{
+        align-items: center;
+        text-align: center;
+    }
+    .hero_section img{
+        justify-content: center;
+        width: 60%;
+        margin-top: 20px;
+        margin-left: 50px;
+        border-radius: 50%;
+        
+    }
+    
+}
+
+
+
+
+
+/* About Us section */
+.about_section{
+    background-color: #282a39;
+    padding: 170px 0px; 
+}
+.about_section #heading{
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    line-height: 57px;
+
+}
+.about_section .lets_talk{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+.about_section #info_gmail{
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--pink-color) !important;
+    margin-top: 35px;
+    word-spacing: 6px;
+}
+.about_section .contact_info{
+    margin-top: 15px;
+}
+.about_section .contact_info h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    word-spacing: 6px;
+
+}
+.about_section .about_me_content #text{
+  font-size: 15px;
+  margin-top: 13px;
+  line-height: 25px;
+  color: var(--secondary-color);
+}
+.about_section .about_me_content hr{
+    margin: 0px;
+    border: 0.5px solid var(--pink-color);
+    width: 6rem;
+}
+.about_section .about_me_content table td{
+    border: none;
+    color: white;
+    font-size: 13px;
+}
+.about_section .about_me_content button{
+    border-radius: 7px;
+    font-size: 15px;
+    color: white;
+    background-color: var(--pink-color);
+    border: 3px solid var(--pink-color);
+    font-family: 'Poppins'sans-serif;
+    margin-top: 10px ;
+}
+.about_section .about_me_content button:hover{
+   animation: swing;
+   animation-duration: 0.5s;
+}
+
+
+/* Media adjustment for responsive design  for about section*/
+@media (max-width: 993px) and (min-width: 768px){
+    .about_section .about_me_content #text{
+        font-size: 12px;
+    }
+    .about_section #heading
+    {
+        font-size: 28px !important;
+
+
+    }
+}
+
+
+
+
+/* Skills - Section  */
+.skills_section{
+    padding: 100px 0px;
+}
+
+.skills_section .skills_section_left_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills_section #heading{
+    font-weight: 600;
+    font-size: 50px;
+}
+.skills_section hr{
+    border: 0.5px solid var(--pink-color);
+    width: 6rem;
+    margin: 12px 0px;
+
+}
+
+.skills_section p{
+    color: var(--secondary-color);
+    font-size: 13px;
+    
+}
+.skills_section .social_media_icons .list-group-item{
+    border: none;
+    color: white !important;
+    border-left: 2px solid var(--pink-color);
+    border-radius: 0px;
+    margin: 5px 0px;
+    width: 208px;
+    background-color: var(--bg-color-of-lists-in-skills-section);
+}
+.skills_section .social_media_icons .list-group-item a{
+    transition: 0.5s;
+}
+.skills_section .social_media_icons .list-group-item:hover a{
+    margin-left: 10px;
+}
+
+.skills_section_right_section .each_skills{
+    margin: 25px 0px;
+}
+.skills_section_right_section .each_skills span{
+    color: white;
+    font-size: 14px; 
+}
+.skills_section_right_section .each_skills .progress
+{
+    background-color: var(--bg-color-of-lists-in-skills-section);
+    border-radius: 100px;
+    margin-top: 3px ;
+    height: 10px;
+
+}
+.skills_section_right_section .each_skills .progress-bar{
+    background-color: var(--pink-color);
+}
+
+
+
+/* Portfolio tabs */
+/* .tabs_center{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
+} */
+.portfolio_section{
+    background: #282A39;
+    padding: 170px 0px;
+}
+
+.portfolio_section .nav-tabs{
+    border: none;
+    width: 30%;
+    text-align: center;
+}
+.portfolio_section .nav-tabs .nav-link.active{
+    border: none;
+    color:white;
+    border-bottom: 2px solid var(--pink-color) !important;
+    background: transparent;
+}
+
+.portfolio_section .nav-tabs .nav-link.active:hover{
+    border-bottom: 2px solid var(--pink-color) !important;
+
+}
+.portfolio_section .nav-tabs .nav-item.show .nav-link{
+    font-weight: 400;
+    font-size: 14px;
+    background: transparent !important;
+}
+
+.portfolio_section .nav-tabs .nav-link:hover{
+    border: none;
+}
+
+.portfolio_section .tab-content .card img{
+    border: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

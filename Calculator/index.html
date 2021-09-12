@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="./Styles/index.css">
+  <!-- CSS Section -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+ </head>
+ <body>
+     <section class="main_section">
+         <div class="container">
+                <!-- <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"> -->
+                    <h1 class="heading"> Calculator </h1>
+                    <div class="result">
+                        <input id="result" type ="text"  value="" name="result" disabled placeholder="Result"/>      
+                    </div>
+                    <div class="button">
+                        <input type="button" value="(" id="openB" onclick="clicked('(')"/>
+                        <input type="button" value="%" id="modulus" onclick="clicked('%')" />
+                        <input type="button" value=")" id="closeB"  onclick="clicked(')')"/>
+                        <input type="button" value="C" id="clear" onclick="deletePrev()"/>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="1" id="one" onclick="clicked(1)"/>
+                        <input type="button" value="2" id="two" onclick="clicked(2)" />
+                        <input type="button" value="3" id="three" onclick="clicked(3)" />
+                        <input type="button" value="+" id="plus" onclick="clicked('+')"/>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="4" id="four" onclick="clicked(4)"/>
+                        <input type="button" value="5" id="five" onclick="clicked(5)"/>
+                        <input type="button" value="6" id="six" onclick="clicked(6)"/>
+                        <input type="button" value="-" id="minus" onclick="clicked('-')"/>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="7" id="seven" onclick="clicked(7)"/>
+                        <input type="button" value="8" id="eight" onclick="clicked(8)"/>
+                        <input type="button" value="9" id="nine" onclick="clicked(9)"/>
+                        <input type="button" value="*" id="multi" onclick="clicked('*')"/>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="." id="dot" onclick="clicked('.')"/>
+                        <input type="button" value="0" id="zero" onclick="clicked(0)"/>
+                        <input type="button" value="/" id="divide" onclick="clicked('/')"/>
+                        <input type="button" value="=" id="equalto" onclick="evaluteResult()"/>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </section>
+
+<script src="./Script./scripts.js">
+
+</script>
+
+ </body>
+</html>
+    

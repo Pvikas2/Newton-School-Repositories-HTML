@@ -281,6 +281,10 @@ canvas.particles-js-canvas-el{
 .about_section .about_me_content button:hover{
    animation: swing;
    animation-duration: 0.5s;
+   /* color: #bbbbbb; */
+   background-color: white;
+   border-color: white;
+   color: black;
 }
 
 
@@ -510,6 +514,65 @@ canvas.particles-js-canvas-el{
     }
 }
 
+/* Education Section  */
+.education_section{
+   /* padding: 100px 0px; */
+   background-color: #232432;
+   border: 2px solid whitesmoke;
+}
+
+.table_section .heading{
+  
+}
+.table_section{
+    /* margin: 10px; */
+    /* align-content: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    padding-left: 30px;
+    /* padding-top: 20px; */
+}
+.edu_table{
+    height: 500px;
+    width: 1000px;
+    color: whitesmoke;
+    border: 2px solid #bbbbbb;
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .edu_table{
+        height: 500px;
+        width: 600px;
+       
+    }
+    .table_section{
+        height: 500px;
+        width: 900px;
+        /* margin-top: 100px; */
+        /* padding-left: 50px; */
+        /* align-content: center;
+         */
+         /* justify-content: center; */
+       padding-left: 30px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 400px){
+    .edu_table{
+        height: 300px;
+        width: 400px;
+        /* color: whitesmoke; */
+    }
+    .table_section{
+        height: 450px;
+        width: 300px;
+        /* margin-top: 100px; */
+        padding-left: 10px;
+
+    }
+
+}
 
 
 

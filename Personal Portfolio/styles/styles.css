@@ -388,9 +388,13 @@ canvas.particles-js-canvas-el{
     width: 30%;
     text-align: center;
 }
+.portfolio-section .nav-tabs .nav-link{
+    color: white;
+}
+
 .portfolio-section .nav-tabs .nav-link.active{
     border: none;
-    color:white;
+    color:white !important;
     border-bottom: 2px solid var(--pink-color) !important;
     background: transparent;
 }

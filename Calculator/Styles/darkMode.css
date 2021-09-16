@@ -1,0 +1,118 @@
+.main_section{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+     
+    display:flex;
+    justify-content: center;
+    align-content: center;
+     /* padding-left: 300px; */
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #748393;
+
+}
+.heading {
+    background: lightblue;
+    text-align: center;
+    color:  #232387;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+        
+}
+.button{
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    /* padding: 50px; */
+    /* margin: 50px; */
+    /* justify-content: space-around; */
+
+     /* height: 20px; */
+     /* width: ; */
+}
+.result{
+    
+    /* display: flex; */
+    /* margin: 2px; */
+    /* text-align: center; */
+    /* padding-top: 5px; */
+    color: #847832;
+    height: 55px;
+    background-color: #592492;
+
+    /* align-items: center; */
+}
+input[type="text"]{
+    color:whitesmoke;
+    width: 530px;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    
+     text-align: end;
+    /* border-radius: 10%; */
+    border: 1px solid black;
+}
+input[type="button"]{
+   width: 123px;
+   height:  50px;
+   margin: 4px;
+   background-color: #748393;
+   border-radius: 20%;
+}
+input[type="button"]:hover{
+   animation: swing;
+   transition: 0.5s;
+   color: white;
+   background-color: #974383;
+   /* border: 2px solid white; */
+ 
+ }
+
+ .container{
+     padding-top: 50px;
+     background-color: #402873;
+     height: 500px;
+     text-align: center;
+     display: inline-block;
+     justify-content: center;
+     /* width: 80%; */
+     border-radius: 10%;
+
+ }
+
+ /* Toggle key CSS  */
+
+.container .toggleKey{
+    width: 200px;
+    height: 40px;
+
+    
+}
+
+.container .toggleKey  button{
+  height: 30px;
+  width:  50px;
+  border-radius: 10%;
+}
+
+
+
+@media (max-width : 900px) and (min-width: 560px) {
+    input[type="text"]{
+     /* text-size-adjust: 20px; */
+     width: 400px;
+     height: 40px;
+      /* padding: 5px; */
+     color:black;
+    }
+   .result{
+       padding-top: 3px;
+   }
+   input[type="button"]{
+       height: 40px;
+       border-radius: 30%;
+   }
+}

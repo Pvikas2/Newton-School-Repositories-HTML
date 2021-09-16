@@ -46,6 +46,8 @@
 input[type="text"]{
     color: black;
     width: 530px;
+    font-size: 25px;
+     text-align: end;
     height: 50px;
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 10px;
@@ -79,3 +81,34 @@ input[type="button"]:hover{
      border-radius: 10%;
 
  }
+
+.container .toggleKey{
+    width: 200px;
+    height: 40px;
+    
+}
+
+.container .toggleKey  button{
+  height: 30px;
+  width:  50px;
+  border-radius: 10%;
+
+}
+
+
+@media (max-width : 900px) and (min-width: 560px) {
+    input[type="text"]{
+     /* text-size-adjust: 20px; */
+     width: 400px;
+     height: 40px;
+      /* padding: 5px; */
+     color:black;
+    }
+   .result{
+       padding-top: 3px;
+   }
+   input[type="button"]{
+       height: 40px;
+       border-radius: 30%;
+   }
+}

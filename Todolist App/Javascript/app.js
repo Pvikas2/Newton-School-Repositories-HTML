@@ -94,17 +94,21 @@ function deleteitem(index){
 }
 
 //complete task
-//  function completetask(index){
-//     let webtask = localStorage.getItem("localtask");
-//     let taskObj = JSON.parse(webtask);
-//     taskObj[index] = '<span style="text-decoration:line-through">' + taskObj[index] + '</span>';
-//     let addedtasklist = document.getElementById("addedtasklist");
-//     addedtasklist.addEventListener("click", function(e){
-//         console.log(addedtasklist)
-//     })
-//     localStorage.setItem("localtask", JSON.stringify(taskObj));
-//     showtask();
-// } 
+ function completetask(index){
+    let webtask = localStorage.getItem("localtask");
+    let taskObj = JSON.parse(webtask);
+    taskObj[index] = '<span style="text-decoration:line-through">' + taskObj[index] + '</span>';
+    // let getAttribute = document.getElementById("{index}");
+    // getAttribute.addEventListener("onclick", () => {
+    //     getAttribute.style = "color: green"
+    // })
+    let addedtasklist = document.getElementById("addedtasklist");
+    addedtasklist.addEventListener("click", function(e){
+        console.log(addedtasklist)
+    })
+    localStorage.setItem("localtask", JSON.stringify(taskObj));
+    showtask();
+} 
 
 // complete task
 let addedtasklist = document.getElementById("addedtasklist");
@@ -169,21 +173,21 @@ deleteallbtn.addEventListener("click", function(){
 
 
 // // serachlist
-// let searchtextbox = document.getElementById("searchtextbox");
-// searchtextbox.addEventListener("input", function(){
-//     let trlist = document.querySelectorAll("tr");
-//     Array.from(trlist).forEach(function(item){
-//         let searchedtext = item.getElementsByTagName("td")[0].innerText;
-//         let searchtextboxval = searchtextbox.value;
-//         let re = new RegExp(searchtextboxval, 'gi');
-//         if(searchedtext.match(re)){
-//             item.style.display="table-row";
-//         }
-//         else{
-//             item.style.display="none";
-//         }
-//     })
-// })
+let searchtextbox = document.getElementById("searchtextbox");
+searchtextbox.addEventListener("input", function(){
+    let trlist = document.querySelectorAll("tr");
+    Array.from(trlist).forEach(function(item){
+        let searchedtext = item.getElementsByTagName("td")[0].innerText;
+        let searchtextboxval = searchtextbox.value;
+        let re = new RegExp(searchtextboxval, 'gi');
+        if(searchedtext.match(re)){
+            item.style.display="table-row";
+        }
+        else{
+            item.style.display="none";
+        }
+    })
+})
 
 
 
